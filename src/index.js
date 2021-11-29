@@ -66,14 +66,20 @@ const contactTitle = document.querySelector('.contact h4');
 const contactAddress = contactTitle.nextElementSibling;
 const contactPhone = contactAddress.nextElementSibling;
 const contactEmail = contactPhone.nextElementSibling;
-const footer = document.querySelector('footer');
+const footer = document.querySelector('footer a');
 
 navItem1.textContent = siteContent['nav']['nav-item-1'];
+navItem1.className = 'italic';
 navItem2.textContent = siteContent['nav']['nav-item-2'];
+navItem2.className = 'italic';
 navItem3.textContent = siteContent['nav']['nav-item-3'];
+navItem3.className = 'italic';
 navItem4.textContent = siteContent['nav']['nav-item-4'];
+navItem4.className = 'italic';
 navItem5.textContent = siteContent['nav']['nav-item-5'];
+navItem5.className = 'italic';
 navItem6.textContent = siteContent['nav']['nav-item-6'];
+navItem6.className = 'italic';
 
 logo.src = siteContent['images']['logo-img'];
 bigTitle.textContent = siteContent['cta']['h1'];
@@ -95,3 +101,4 @@ contactAddress.textContent = siteContent['contact']['address'];
 contactPhone.textContent = siteContent['contact']['phone'];
 contactEmail.textContent = siteContent['contact']['email'];
 footer.textContent = siteContent['footer']['copyright'];
+footer.className = 'bold';
