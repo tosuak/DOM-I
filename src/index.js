@@ -40,3 +40,25 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const navItem1 = document.querySelector('nav a');
+const navItem2 = navItem1.nextElementSibling;
+const navItem3 = navItem2.nextElementSibling;
+const navItem4 = navItem3.nextElementSibling;
+const navItem5 = navItem4.nextElementSibling;
+const navItem6 = navItem5.nextElementSibling;
+const logo = document.querySelector('#logo-img');
+const bigTitle = document.querySelector('cta-text');
+const button = document.querySelector('button');
+const topImg = document.querySelector('#cta-img');
+const subTitles = document.querySelectorAll('h4');
+const subContent = document.querySelectorAll('.text-content p');
+const bottomImg = document.querySelector('#middle-img');
+const contact = document.querySelector('.contact');
+
+navItem1.textContent = siteContent['nav']['nav-item-1'];
+navItem2.textContent = siteContent['nav']['nav-item-2'];
+navItem3.textContent = siteContent['nav']['nav-item-3'];
+navItem4.textContent = siteContent['nav']['nav-item-4'];
+navItem5.textContent = siteContent['nav']['nav-item-5'];
+navItem6.textContent = siteContent['nav']['nav-item-6'];
