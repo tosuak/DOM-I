@@ -62,7 +62,11 @@ const product = document.querySelector('.bottom-content .text-content:nth-of-typ
 const productContent = product.nextElementSibling;
 const vision = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4');
 const visionContent = vision.nextElementSibling;
-const contact = document.querySelector('.contact');
+const contactTitle = document.querySelector('.contact h4');
+const contactAddress = contactTitle.nextElementSibling;
+const contactPhone = contactAddress.nextElementSibling;
+const contactEmail = contactPhone.nextElementSibling;
+const footer = document.querySelector('footer');
 
 navItem1.textContent = siteContent['nav']['nav-item-1'];
 navItem2.textContent = siteContent['nav']['nav-item-2'];
@@ -86,4 +90,8 @@ product.textContent = siteContent['main-content']['product-h4'];
 productContent.textContent = siteContent['main-content']['product-content'];
 vision.textContent = siteContent['main-content']['vision-h4'];
 visionContent.textContent = siteContent['main-content']['vision-content'];
-
+contactTitle.textContent = siteContent['contact']['contact-h4'];
+contactAddress.textContent = siteContent['contact']['address'];
+contactPhone.textContent = siteContent['contact']['phone'];
+contactEmail.textContent = siteContent['contact']['email'];
+footer.textContent = siteContent['footer']['copyright'];
