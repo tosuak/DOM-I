@@ -33,9 +33,9 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
     "copyright": "Copyright Great Idea! 2021",
   },
   "images": {
-    "logo-img": "http://localhost:9000/img/logo.png",
-    "cta-img": "http://localhost:9000/img/cta.png",
-    "accent-img": "http://localhost:9000/img/accent.png",
+    "logo-img": "mocks/img/logo.png",
+    "cta-img": "mocks/img/cta.png",
+    "accent-img": "mocks/img/accent.png",
   },
 };
 
@@ -48,8 +48,8 @@ const navItem4 = navItem3.nextElementSibling;
 const navItem5 = navItem4.nextElementSibling;
 const navItem6 = navItem5.nextElementSibling;
 const logo = document.querySelector('#logo-img');
-const bigTitle = document.querySelector('cta-text');
-const button = document.querySelector('button');
+const bigTitle = document.querySelector('.cta-text h1');
+const button = document.querySelector('.cta-text button');
 const topImg = document.querySelector('#cta-img');
 const subTitles = document.querySelectorAll('h4');
 const subContent = document.querySelectorAll('.text-content p');
@@ -62,3 +62,8 @@ navItem3.textContent = siteContent['nav']['nav-item-3'];
 navItem4.textContent = siteContent['nav']['nav-item-4'];
 navItem5.textContent = siteContent['nav']['nav-item-5'];
 navItem6.textContent = siteContent['nav']['nav-item-6'];
+
+logo.src = siteContent['images']['logo-img'];
+bigTitle.textContent = siteContent['cta']['h1'];
+button.textContent = siteContent['cta']['button'];
+topImg.src = siteContent['images']['cta-img'];
